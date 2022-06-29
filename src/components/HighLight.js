@@ -12,11 +12,6 @@ export default function HighLight({ report }) {
       type: "confirmed",
     },
     {
-      title: "Khỏi",
-      count: data.Recovered,
-      type: "recovered",
-    },
-    {
       title: "Tử vong",
       count: data.Deaths,
       type: "death",
@@ -24,9 +19,9 @@ export default function HighLight({ report }) {
   ];
 
   return (
-    <Grid container spacing={3}>
+    <Grid container spacing={5}>
       {summary.map((item, idx) => (
-        <Grid item sm={4} xs={12} key={idx}>
+        <Grid item sm={6} xs={12} key={idx}>
           <HighLightCard
             title={item.title}
             count={item.count}

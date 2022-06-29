@@ -4,7 +4,6 @@ import React from "react";
 const useStyle = makeStyles({
   wrapper: (props) => {
     if (props.type === "confirmed") return { borderBottom: "5px solid #e74c3c" };
-    if (props.type === "recovered") return { borderBottom: "5px solid #2ecc71" };
     else return { borderBottom: "5px solid #2c3e50" };
   },
   title: {
